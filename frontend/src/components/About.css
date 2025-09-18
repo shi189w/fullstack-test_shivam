@@ -1,0 +1,61 @@
+.about-section {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.about-section h2 {
+  color: #7dd3fc;
+  font-size: 1.6rem;
+  margin-top: 0;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Grid layout for the four cards */
+.grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 12px;
+}
+
+/* Individual cards */
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  padding: 16px;
+  transition: transform 0.2s ease, background 0.2s ease;
+  min-height: 120px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Muted text inside the cards */
+.muted {
+  color: #9aa7b2;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Responsive tweak for smaller screens */
+@media (max-width: 700px) {
+  .about-section {
+    padding: 18px;
+  }
+  .about-section h2 {
+    font-size: 1.4rem;
+  }
+}

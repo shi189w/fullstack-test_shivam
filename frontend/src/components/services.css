@@ -1,0 +1,36 @@
+/* Wrapper for the Services section */
+.section {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.section h2 {
+  color: #7dd3fc;
+  font-size: 1.6rem;
+  margin-top: 0;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Grid layout for service cards */
+.grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 12px;
+}
+
+/* Service cards */
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  padding: 18px;
+  min-height: 120px;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
